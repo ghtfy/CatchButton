@@ -13,9 +13,12 @@ namespace CatchButton
     public partial class Form1 : Form
     {
         int score = 0; // 점수 표시를 위한 컨텍스트 선언
+        int missCount = 0; //버튼을 놓친 횟수 저장 변수
+        Size initialSize; // 처음 버튼 크기를 기억하는 변수
         public Form1()
         {
             InitializeComponent();
+            initialSize = RunButton.Size; //시작 시 버튼 크기 저장
         }
 
  
@@ -41,6 +44,13 @@ namespace CatchButton
             //도망가는 점수 감점 10점 
             score -= 10;
             this.Text = $"현재 점수: {score}점";
+
+            if (missCount >= 20) //게임 오버 체크 코드
+            {
+                MessageBox.Show("Game Over! 20번 놓치셨습니다.", "게임 종료");
+                ResetGame(); // 게임 리셋하는 선언
+                return;      // 더 이상 아래 도망 로직을 실행하지 않음
+            }
         }
 
         private void RunButton_Click(object sender, EventArgs e)
@@ -57,7 +67,20 @@ namespace CatchButton
             MessageBox.Show("축하합니다~!", "성공"); 
             
         }
+        private void ResetGame()
+        {
+            score = 0;             // 점수 초기화
+            missCount = 0;         // 놓친 횟수 초기화
+            RunButton.Size = initialSize; // 버튼 크기를 처음 상태로 복구
+            RunButton.Location = new Point(100, 100); // 버튼 위치를 적당한 곳으로 이동
+            this.Text = "게임을 다시 시작합니다!";
+        }
 
+        // ★ 추가: [다시 시작] 버튼을 따로 클릭했을 때 호출
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 

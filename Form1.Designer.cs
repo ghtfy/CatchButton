@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.RunButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // RunButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(429, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 96);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "나를 잡아봐";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.RunButton.BackColor = System.Drawing.SystemColors.Info;
+            this.RunButton.Font = new System.Drawing.Font("한컴 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.RunButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.RunButton.Location = new System.Drawing.Point(434, 123);
+            this.RunButton.Name = "RunButton";
+            this.RunButton.Size = new System.Drawing.Size(239, 85);
+            this.RunButton.TabIndex = 0;
+            this.RunButton.Text = "나를 잡아봐";
+            this.RunButton.UseVisualStyleBackColor = false;
+            this.RunButton.Click += new System.EventHandler(this.RunButton_Click);
+            this.RunButton.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.RunButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -58,7 +59,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button RunButton;
     }
 }
 

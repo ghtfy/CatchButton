@@ -12,6 +12,7 @@ namespace CatchButton
 {
     public partial class Form1 : Form
     {
+        int score = 0; // 점수 표시를 위한 컨텍스트 선언
         public Form1()
         {
             InitializeComponent();
@@ -37,11 +38,24 @@ namespace CatchButton
             // 5. 시각적피드백(폼제목표시줄에좌표출력)
             this.Text= $"버튼위치: ({nextX}, {nextY})";
 
+            //도망가는 점수 감점 10점 
+            score -= 10;
+            this.Text = $"현재 점수: {score}점";
         }
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("축하합니다~!", "성공"); //메세지 박스 클릭시 메시지 띄우기
+            //점수 추가 표시
+            score += 100;
+            this.Text = $"현재 점수: {score}점";
+
+            // 2. 난이도 조절: 버튼 크기를 10% 축소 (현재 크기의 90%로 설정)
+            int newWidth = (int)(RunButton.Width * 0.9);
+            int newHeight = (int)(RunButton.Height * 0.9);
+
+            //메세지 박스 클릭시 메시지 띄우기
+            MessageBox.Show("축하합니다~!", "성공"); 
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

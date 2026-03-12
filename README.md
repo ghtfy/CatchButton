@@ -22,7 +22,7 @@
   **주의 사항**:`나를 잡아봐` 버튼을 클릭 할 경우에만 메시지 박스를 띄웁니다
 마우스가 닿을경우가 아닌 클릭(`click`) 이벤트가 발생 시에만 메세지 박스를 띄우도록 설정합니다.
   
-  <img width="800" height="478" alt="스크린샷 2026-03-12 121843" src="https://github.com/user-attachments/assets/86a56310-2b32-48da-a73d-04968a2139f9" />
+![Image](https://github.com/user-attachments/assets/38b2aee8-e35f-4c8e-b76c-659668f03f52)
 
    
 - 3 단계 점수 표시와 점수별 난이도 조정

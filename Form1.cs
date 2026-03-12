@@ -41,7 +41,7 @@ namespace CatchButton
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("축하합니다~!", "성공"); //메세지 박스 클릭시 메시지 띄우기
         }
 
         private void Form1_Load(object sender, EventArgs e)

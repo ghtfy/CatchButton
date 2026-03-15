@@ -47,7 +47,6 @@
 **주의 사항**
   ```csharp
   missCount++; 를 넣지 않을 시 버튼을 놓친 횟수를 인식하지 못해 `게임오버` 버튼이 구현 안 됩니다.
-  ```csharp
   RunButton.Enabled = true; 코드를 삽입하여 재시작시 버튼이 활성화 하도록 하였습니다
 <img width="997" height="595" alt="Image" src="https://github.com/user-attachments/assets/7c46a354-81dc-4b7a-b194-d77350aa5ed9" />
 

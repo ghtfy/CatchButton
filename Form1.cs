@@ -43,12 +43,16 @@ namespace CatchButton
 
             //도망가는 점수 감점 10점 
             score -= 10;
+            missCount++; // 버튼 놓칠때 횟수 적용 코드
+
             this.Text = $"현재 점수: {score}점";
 
             if (missCount >= 20) //게임 오버 체크 코드
             {
                 MessageBox.Show("Game Over! 20번 놓치셨습니다.", "게임 종료");
-                ResetGame(); // 게임 리셋하는 선언
+                //ResetGame(); // 게임 리셋하는 선언
+                RunButton.Enabled = false;// 게임 오버시 버튼 비활성 코드 
+
                 return;      // 더 이상 아래 도망 로직을 실행하지 않음
             }
         }
@@ -63,6 +67,8 @@ namespace CatchButton
             int newWidth = (int)(RunButton.Width * 0.9);
             int newHeight = (int)(RunButton.Height * 0.9);
 
+            RunButton.Size = new Size(newWidth, newHeight);//새 버튼 크기 적용
+
             //메세지 박스 클릭시 메시지 띄우기
             MessageBox.Show("축하합니다~!", "성공"); 
             
@@ -73,6 +79,8 @@ namespace CatchButton
             missCount = 0;         // 놓친 횟수 초기화
             RunButton.Size = initialSize; // 버튼 크기를 처음 상태로 복구
             RunButton.Location = new Point(100, 100); // 버튼 위치를 적당한 곳으로 이동
+
+            RunButton.Enabled = true;//게임 재시작 버튼 활성화
             this.Text = "게임을 다시 시작합니다!";
         }
 

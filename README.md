@@ -42,7 +42,6 @@
   
 <img width="795" height="479" alt="스크린샷 2026-03-12 124558" src="https://github.com/user-attachments/assets/6e47311d-a4dd-42b2-befa-74f99b3849d1" />
 
-- 4 단계 코드의 실행 스크린샷
 - `나를 잡아봐` 버튼을 20회 놓쳤을 시 게임오버 기능 구현
 - **주의 사항**
   ```csharp

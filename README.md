@@ -43,6 +43,13 @@
 <img width="795" height="479" alt="스크린샷 2026-03-12 124558" src="https://github.com/user-attachments/assets/6e47311d-a4dd-42b2-befa-74f99b3849d1" />
 
 - 4 단계 코드의 실행 스크린샷
+- `나를 잡아봐` 버튼을 20회 놓쳤을 시 게임오버 기능 구현
+**주의 사항**
+  ```csharp
+  missCount++; 를 넣지 않을 시 버튼을 놓친 횟수를 인식하지 못해 `게임오버` 버튼이 구현 안 됩니다.
+  ```csharp
+  RunButton.Enabled = true; 코드를 삽입하여 재시작시 버튼이 활성화 하도록 하였습니다
+<img width="997" height="595" alt="Image" src="https://github.com/user-attachments/assets/7c46a354-81dc-4b7a-b194-d77350aa5ed9" />
 
 ## 구현 시 어려웠던 점
 - 좌표값을 계산 후 `나를 잡아봐` 버튼이 폼 영역 밖으로 벗어나지 않도록 값을 적절한 값을 대입하는 부분이 어려웠습니다.

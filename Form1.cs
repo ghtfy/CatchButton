@@ -26,8 +26,6 @@ namespace CatchButton
             InitializeComponent();
             initialSize = RunButton.Size; //시작 시 버튼 크기 저장
             //button1.Click += btnReset_Click; // '다시 시작' 버튼 클릭 이벤트 연결코드
-
-
         }
 
  
@@ -107,7 +105,7 @@ namespace CatchButton
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

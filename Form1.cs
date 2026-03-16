@@ -25,8 +25,9 @@ namespace CatchButton
         {
             InitializeComponent();
             initialSize = RunButton.Size; //시작 시 버튼 크기 저장
-            
-        
+            //button1.Click += btnReset_Click; // '다시 시작' 버튼 클릭 이벤트 연결코드
+
+
         }
 
  
@@ -95,9 +96,8 @@ namespace CatchButton
             missCount = 0;         // 놓친 횟수 초기화
             RunButton.Size = initialSize; // 버튼 크기를 처음 상태로 복구
             RunButton.Location = new Point(100, 100); // 버튼 위치를 적당한 곳으로 이동
-
             RunButton.Enabled = true;//게임 재시작 버튼 
-            this.Text = "게임을 다시 시작합니다!";
+            this.Text = "게임을 다시 시작합니다!"; //텍스트 출력
         }
 
         // [다시 시작] 버튼을 따로 클릭했을 때 호출

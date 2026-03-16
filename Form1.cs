@@ -79,6 +79,8 @@ namespace CatchButton
             int newWidth = (int)(RunButton.Width * 0.9);
             int newHeight = (int)(RunButton.Height * 0.9);
 
+            RunButton.Size = new Size(newWidth, newHeight); //클릭 성공시 버튼 크기 축소 코드
+
             RunButton.Size = new Size(newWidth, newHeight);//새 버튼 크기 적용
 
             //메세지 박스 클릭시 메시지 띄우기
@@ -96,7 +98,7 @@ namespace CatchButton
             this.Text = "게임을 다시 시작합니다!";
         }
 
-        // ★ 추가: [다시 시작] 버튼을 따로 클릭했을 때 호출
+        // [다시 시작] 버튼을 따로 클릭했을 때 호출
         private void btnReset_Click(object sender, EventArgs e)
         {
             ResetGame();

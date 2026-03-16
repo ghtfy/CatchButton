@@ -70,7 +70,7 @@ namespace CatchButton
             //점수 추가 표시
             score += 100;
 
-            //catchSound.Play(); //잡기 효과음
+            //catchSound.Play();  //잡기 효과음
 
 
             this.Text = $"현재 점수: {score}점";
@@ -81,10 +81,10 @@ namespace CatchButton
 
             RunButton.Size = new Size(newWidth, newHeight); //클릭 성공시 버튼 크기 축소 코드
 
-            RunButton.Size = new Size(newWidth, newHeight);//새 버튼 크기 적용
+            RunButton.Size = new Size(newWidth, newHeight);//새 버튼 크기 적용 (중복 코드 제거 필요함)
 
-            //메세지 박스 클릭시 메시지 띄우기
-            MessageBox.Show("축하합니다~!", "성공"); 
+            
+            MessageBox.Show("축하합니다~!", "성공"); //메세지 박스 클릭시 메시지 띄우기
             
         }
         private void ResetGame()

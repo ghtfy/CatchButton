@@ -31,21 +31,20 @@
 <img width="997" height="601" alt="Image" src="https://github.com/user-attachments/assets/22036352-71a5-4ceb-87d6-272b86f750cc" />
 
    
-- 3 단계 점수 표시와 점수별 난이도 조정
+### 3 단계 점수 표시와 점수별 난이도 조정
   - `나를 잡아봐` 버튼 클릭 성공 시 점수 추가 , 도망다니면 감점 10점 기능을 구현하였습니다.
   - 버튼 클릭 성공 시 난이도 조절을 위해 `나를 잡아봐` 버튼이 축소 되도록 기능을 구현하였습니다.
   - **주의 사항**
   " public partial class Form1 : Form" 바로 아랫부분에 int score = 0;을 넣어주지 않을 경우
   'score'의 이름이 컨텍스트에 없기 때문에 코드 실행의 오류가 생깁니다.
   
-  <img width="794" height="477" alt="스크린샷 2026-03-12 124537" src="https://github.com/user-attachments/assets/5ad8ca2b-6cd4-4a64-bc11-748d5da45e7b" />
-
-  <img width="1001" height="600" alt="Image" src="https://github.com/user-attachments/assets/03fa00fa-5bb5-49d8-982c-79383ad6f8c1" />
-
+<img width="794" height="477" alt="스크린샷 2026-03-12 124537" src="https://github.com/user-attachments/assets/5ad8ca2b-6cd4-4a64-bc11-748d5da45e7b" />
   
 <img width="795" height="479" alt="스크린샷 2026-03-12 124558" src="https://github.com/user-attachments/assets/6e47311d-a4dd-42b2-befa-74f99b3849d1" />
 
-- `나를 잡아봐` 버튼을 20회 놓쳤을 시 게임오버 기능 구현
+<img width="1001" height="600" alt="Image" src="https://github.com/user-attachments/assets/03fa00fa-5bb5-49d8-982c-79383ad6f8c1" />
+
+### `나를 잡아봐` 버튼을 20회 놓쳤을 시 게임오버 기능 구현
 - **주의 사항**
   ```csharp
   missCount++; 를 넣지 않을 시 버튼을 놓친 횟수를 인식하지 못해 `게임오버` 버튼이 구현 안 됩니다.
